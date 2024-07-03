@@ -1,17 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href = "style.css">
+    <title>Audio Visualizer</title>
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <div id="container1">
         <canvas id="canvas1"></canvas>
-        <audio id = "audio1" controls></audio>
-        <input type="file" id="fileupload" accept = "audio/*/">
+        <div id="controls">
+            <audio id="audio1" controls></audio>
+            <input type="file" id="fileupload" accept="audio/*">
+            <select id="animationSelect" style="display: none;">
+                <option value="1">Animation 1</option>
+                <option value="2">Animation 2</option>
+                <option value="3">Animation 3</option>
+                <option value="4">Animation 4</option>
+                <option value="5">Animation 5</option>
+            </select>
+        </div>
     </div>
     <script src="script.js"></script>
 </body>
+
 </html>
